@@ -12,10 +12,5 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
   
-  search = false;
-
-  toggleSearch(): void{
-    this.search = !this.search;
-  }
 
 }

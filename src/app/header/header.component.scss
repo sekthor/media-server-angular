@@ -1,22 +1,32 @@
 #title {
+    margin-right: 10px;
     display: inline;
     font-weight: normal;
 }
 #nav {
     /*margin-top: 0.9em;*/
     font-size: 1.1em;
-    display: block;
-    text-align: right;
+    display: inline;
+    /*text-align: right;*/
 
 }
 #menu{
-    float: right;
+    /*float: right;*/
     font-size: 2em;
-    
+    visibility: hidden;
 }
 #search {
-    display: inline;
+    float: right;
     margin: 0px 0px 0px 200px;
+}
+#search input {
+    border-radius: 0px;
+    border: 1px black solid;
+    padding: 5px;
+}
+#search button {
+    border: 1px black solid;
+    padding: 5px;
 }
 nav a {
     margin: 10px;
