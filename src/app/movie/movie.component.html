@@ -1,9 +1,11 @@
 <div *ngIf="movie">
     <h2 class="container caps">{{ movie.title }} ({{ movie.releaseYear }})</h2>
     
-    <video controls class="container">
+    <div class="container">
+    <video controls>
         <source src="{{ movie.filePath }}" type="video/mp4">
     </video>
+    </div>
     <div class="container">
         <p><span class="caps">Year:</span> {{ movie.releaseYear }}</p>
         <p><span class="caps">Description:</span> {{ movie.description }}</p>
