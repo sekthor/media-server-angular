@@ -11,31 +11,15 @@ export class MovieService {
 
   private movieUrl: "http://test.sekthor.ch/api/movies";
 
-  movies: Movie[] = [
-    {
-      mediaId: 1,
-      title: "Pulp Fiction",
-      mediaType: "movie",
-      description: "Gangster movie",
-      filePath: "/path/to/file.mp4",
-      tags: [],
-      releaseYear: 1994,
-      thumbnail: ""
-    },
-    {
-      mediaId: 2,
-      title: "Dark Knight",
-      mediaType: "movie",
-      description: "Superhero movie",
-      filePath: "/path/to/file.mp4",
-      tags: [],
-      releaseYear: 2008,
-      thumbnail: ""
-    }
-  ]
-
   getAllMovies(): Observable<Movie[]>{
     return this.http.get<Movie[]>("http://localhost:8080/api/movies")
+      .pipe(
+        catchError(this.handleError<Movie[]>('getMovies', []))
+      );
+  }
+
+  getRecentMovies(): Observable<Movie[]>{
+    return this.http.get<Movie[]>("http://localhost:8080/api/movies/recent")
       .pipe(
         catchError(this.handleError<Movie[]>('getMovies', []))
       );
