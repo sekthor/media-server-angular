@@ -1,0 +1,25 @@
+.thumblist {
+    display: inline;
+}
+
+.thumbnail {
+    max-width: 170px;
+}
+
+a {
+    margin: 10px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    margin: auto;
+}
+
+#recent {
+    display: flex;
+    margin: 0 -10px -10px -10px;
+    flex-wrap: wrap;
+}

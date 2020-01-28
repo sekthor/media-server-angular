@@ -17,16 +17,18 @@
 }
 #search {
     float: right;
-    margin: 0px 0px 0px 200px;
 }
 #search input {
     border-radius: 0px;
-    border: 1px black solid;
+    border: 1px gray solid;
     padding: 5px;
+    border-radius: 5px 0px 0px 5px;
 }
 #search button {
-    border: 1px black solid;
+    border: 1px gray solid;
+    border-left: none;
     padding: 5px;
+    border-radius: 0px 5px 5px 0px;
 }
 nav a {
     margin: 10px;
