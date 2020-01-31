@@ -8,13 +8,19 @@ import { MoviesComponent } from './movies/movies.component';
 import { HeaderComponent } from './header/header.component';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { ShowComponent } from './show/show.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
     MoviesComponent,
-    HeaderComponent
+    HeaderComponent,
+    DashboardComponent,
+    LoginComponent,
+    ShowComponent
   ],
   imports: [
     BrowserModule,

@@ -25,7 +25,7 @@ export class MovieService {
       );
   }
 
-  getHero(id: number): Observable<Movie> {
+  getMovie(id: number): Observable<Movie> {
     const url = `http://localhost:8080/api/movie/${id}`;
     
     return this.http.get<Movie>(url).pipe(
