@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ShowService } from '../show.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { Show } from '../show';
-import { Episode } from '../episode';
+import { Show } from '../media';
+import { Episode } from '../media';
 
 @Component({
   selector: 'app-show',

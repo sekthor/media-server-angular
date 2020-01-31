@@ -1,8 +1,9 @@
 
 <div *ngIf="show">
-<h2 class="container">{{ show.title }} ({{ show.releaseYear}})</h2>
+<h2 class="container caps">{{ show.title }} ({{ show.releaseYear}})</h2>
 
-<h3 class="container" *ngIf="currentEpisode">Episode: {{ currentEpisode.episodeNo }} - {{ currentEpisode.name }}</h3>
+<h3 class="container" *ngIf="currentEpisode">
+    Episode {{ currentEpisode.episodeNo }} - {{ currentEpisode.name }}</h3>
 
 <div class="container" *ngIf="currentEpisode">
     <video [src]=currentEpisode.filePath controls>
@@ -11,5 +12,6 @@
 </div>
 
 
-<app-season *ngFor="let season of show.seasons" [season]="season" (selectEvent)="selectEpisode($event)"></app-season>
+<app-season *ngFor="let season of show.seasons"
+    [season]="season" (selectEvent)="selectEpisode($event)"></app-season>
 </div>

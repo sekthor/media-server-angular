@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Episode } from '../episode';
-import { Season } from '../season';
+import { Episode } from '../media';
+import { Season } from '../media';
 
 @Component({
   selector: 'app-season',

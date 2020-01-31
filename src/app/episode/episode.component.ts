@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Episode } from '../episode';
+import { Episode } from '../media';
 
 @Component({
   selector: 'app-episode',

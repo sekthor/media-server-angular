@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Movie } from '../movie';
+import { Movie } from '../media';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { MovieService }  from '../movie.service';
