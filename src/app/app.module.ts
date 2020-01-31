@@ -14,6 +14,8 @@ import { ShowComponent } from './show/show.component';
 import { SeasonComponent } from './season/season.component';
 import { EpisodeComponent } from './episode/episode.component';
 import { MediaDetailComponent } from './media-detail/media-detail.component';
+import { ShowsComponent } from './shows/shows.component';
+import { MediaListComponent } from './media-list/media-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { MediaDetailComponent } from './media-detail/media-detail.component';
     ShowComponent,
     SeasonComponent,
     EpisodeComponent,
-    MediaDetailComponent
+    MediaDetailComponent,
+    ShowsComponent,
+    MediaListComponent
   ],
   imports: [
     BrowserModule,

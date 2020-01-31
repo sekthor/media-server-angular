@@ -1,0 +1,5 @@
+<div class="list">
+    <a *ngFor="let media of medias" routerLink="/{{ media.mediaType }}/{{ media.mediaId }}">
+        <img src="{{ media.thumbnail }}" alt="{{ media.title }} ({{ media.releaseYear }})" class="thumbnail">
+    </a>
+</div>

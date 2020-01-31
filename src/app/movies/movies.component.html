@@ -2,18 +2,6 @@
 
 <div  class="container">
     <h3 class="caps">Recent</h3>
-    <!--
-    <ul>
-        <li *ngFor="let movie of movies" class="thumblist">
-            <a routerLink="/movie/{{ movie.mediaId }}">
-                <img src="{{ movie.thumbnail }}" alt="{{ movie.title }} ({{ movie.releaseYear }})" class="thumbnail">
-            </a>
-        </li>
-    </ul>
-    -->
-    <div id="recent">
-            <a *ngFor="let movie of movies" routerLink="/movie/{{ movie.mediaId }}">
-                <img src="{{ movie.thumbnail }}" alt="{{ movie.title }} ({{ movie.releaseYear }})" class="thumbnail">
-            </a>
-    </div>
+
+    <app-media-list *ngIf="movies" [medias]="movies"></app-media-list>
 </div>

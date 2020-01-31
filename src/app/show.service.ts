@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Show } from './show';
+import { Show } from './media';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -17,6 +17,13 @@ export class ShowService {
     return this.http.get<Show[]>(this.showUrl)
       .pipe(
         catchError(this.handleError<Show[]>('getAllShows', []))
+      );
+  }
+
+  getRecentShows(): Observable<Show[]> {
+    return this.http.get<Show[]>(this.showUrl+"/recent")
+      .pipe(
+        catchError(this.handleError<Show[]>('getRecentShows', []))
       );
   }
 

@@ -1,0 +1,17 @@
+.thumblist {
+    display: inline;
+}
+
+.thumbnail {
+    max-width: 170px;
+}
+
+a {
+    margin: 14px;
+}
+
+.list {
+    display: flex;
+    margin: 0 -14px -14px -14px;
+    flex-wrap: wrap;
+}
