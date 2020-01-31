@@ -11,6 +11,8 @@
     </video>
 </div>
 
+<app-media-detail [media]=show></app-media-detail>
+
 
 <app-season *ngFor="let season of show.seasons"
     [season]="season" (selectEvent)="selectEpisode($event)"></app-season>

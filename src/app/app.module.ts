@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { ShowComponent } from './show/show.component';
 import { SeasonComponent } from './season/season.component';
 import { EpisodeComponent } from './episode/episode.component';
+import { MediaDetailComponent } from './media-detail/media-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EpisodeComponent } from './episode/episode.component';
     LoginComponent,
     ShowComponent,
     SeasonComponent,
-    EpisodeComponent
+    EpisodeComponent,
+    MediaDetailComponent
   ],
   imports: [
     BrowserModule,
