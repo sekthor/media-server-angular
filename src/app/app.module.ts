@@ -11,6 +11,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { ShowComponent } from './show/show.component';
+import { SeasonComponent } from './season/season.component';
+import { EpisodeComponent } from './episode/episode.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ShowComponent } from './show/show.component';
     HeaderComponent,
     DashboardComponent,
     LoginComponent,
-    ShowComponent
+    ShowComponent,
+    SeasonComponent,
+    EpisodeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+<div class="container">
+    <h3>Season {{ season.seasonNo }}</h3>
+
+    <button *ngFor="let episode of season.episodes" class="episodeBtn" (click)="onSelect(episode)">{{ episode.episodeNo }}</button>
+    
+
+</div>

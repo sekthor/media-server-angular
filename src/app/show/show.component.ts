@@ -3,6 +3,7 @@ import { ShowService } from '../show.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Show } from '../show';
+import { Episode } from '../episode';
 
 @Component({
   selector: 'app-show',
@@ -20,11 +21,21 @@ export class ShowComponent implements OnInit {
   }
 
   show: Show;
+  currentEpisode: Episode;
+
+  onSelect(episode: Episode){
+    this.currentEpisode = episode;
+  }
 
   getShow(): void{
     const id = +this.route.snapshot.paramMap.get('id');
     this.showService.getMovie(id)
       .subscribe(show => this.show = show);
+  }
+
+  selectEpisode(episode: Episode){
+    this.currentEpisode = episode;
+       
   }
 
 }
