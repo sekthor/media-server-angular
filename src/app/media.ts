@@ -28,3 +28,7 @@ export class Episode {
     name: string;
     filePath: string;
 }
+
+export class Book extends Media {
+    filePath: string;
+}
