@@ -1,7 +1,10 @@
-<input type="text"/>
+<input #searchBox (input)="search(searchBox.value)"/>
 <button><i class="fa fa-search"></i></button>
 
 
-<ul class="result" *ngIf="medias">
-    <li *ngFor="let media of medias">{{ media.title }}</li>
+<ul class="result">
+    <li *ngFor="let media of medias$ | async">
+        <a routerLink="/{{ media.mediaType }}/{{ media.mediaId }}"> 
+            {{ media.title }} ({{ media.mediaType }})
+        </a></li>
 </ul>
