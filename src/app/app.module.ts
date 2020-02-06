@@ -18,6 +18,7 @@ import { ShowsComponent } from './shows/shows.component';
 import { MediaListComponent } from './media-list/media-list.component';
 import { BooksComponent } from './books/books.component';
 import { BookComponent } from './book/book.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BookComponent } from './book/book.component';
     ShowsComponent,
     MediaListComponent,
     BooksComponent,
-    BookComponent
+    BookComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

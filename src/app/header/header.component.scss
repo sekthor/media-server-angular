@@ -4,31 +4,15 @@
     font-weight: normal;
 }
 #nav {
-    /*margin-top: 0.9em;*/
     font-size: 1.1em;
     display: inline;
-    /*text-align: right;*/
-
 }
 #menu{
-    /*float: right;*/
     font-size: 2em;
     visibility: hidden;
 }
 #search {
     float: right;
-}
-#search input {
-    border-radius: 0px;
-    border: 1px gray solid;
-    padding: 5px;
-    border-radius: 5px 0px 0px 5px;
-}
-#search button {
-    border: 1px gray solid;
-    border-left: none;
-    padding: 5px;
-    border-radius: 0px 5px 5px 0px;
 }
 nav a {
     margin: 10px;
@@ -44,3 +28,4 @@ a {
 a:visited {
     color: black;
 }
+

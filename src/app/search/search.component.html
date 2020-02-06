@@ -1,0 +1,7 @@
+<input type="text"/>
+<button><i class="fa fa-search"></i></button>
+
+
+<ul class="result" *ngIf="medias">
+    <li *ngFor="let media of medias">{{ media.title }}</li>
+</ul>

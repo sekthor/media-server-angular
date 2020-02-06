@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Media } from '../media';
 
 @Component({
   selector: 'app-header',
@@ -12,5 +13,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
   
+  media: Media[];
 
 }
