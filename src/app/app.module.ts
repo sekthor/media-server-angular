@@ -17,6 +17,7 @@ import { MediaDetailComponent } from './media-detail/media-detail.component';
 import { ShowsComponent } from './shows/shows.component';
 import { MediaListComponent } from './media-list/media-list.component';
 import { BooksComponent } from './books/books.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BooksComponent } from './books/books.component';
     MediaDetailComponent,
     ShowsComponent,
     MediaListComponent,
-    BooksComponent
+    BooksComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,

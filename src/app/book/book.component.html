@@ -1,0 +1,12 @@
+<div *ngIf="book">
+<h2 class="container">{{ book.title }}</h2>
+
+<div class="container">
+    
+    <object data="{{ book.filePath }}" type="application/pdf" id="book">
+        
+    </object>
+
+    <a href="http://flix.sekthor.ch">Book</a>
+</div>
+</div>

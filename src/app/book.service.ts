@@ -12,6 +12,16 @@ export class BookService {
 
   constructor(private http: HttpClient) { }
 
+  getBook(id: number): Observable<Book> {
+    const url = `/api/book/${id}`;
+    
+    return this.http.get<Book>(url).pipe(
+
+      catchError(this.handleError<Book>("getBook id=${id}"))
+    );
+
+  }
+
   getRecentBooks(): Observable<Book[]>{
     return this.http.get<Book[]>("/api/books/recent")
       .pipe(
