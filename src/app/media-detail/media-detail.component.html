@@ -1,6 +1,9 @@
 <div class="container">
-    <p><span class="caps">Year:</span> {{ media.releaseYear }}</p>
-    <p><span class="caps">Description:</span> {{ media.description }}</p>
-    <p><span class="caps">Tags:</span>
-        <a class="tag" *ngFor="let tag of media.tags"> {{ tag }} </a></p>
+    <img src="{{ media.thumbnail }}" class="thumbnail">
+    <div id="info">
+        <p><span class="caps">Year:</span> {{ media.releaseYear }}</p>
+        <p><span class="caps">Description:</span> {{ media.description }}</p>
+        <p><span class="caps">Tags:</span>
+            <a class="tag" *ngFor="let tag of media.tags"> {{ tag }} </a></p>
+    </div>
 </div>
