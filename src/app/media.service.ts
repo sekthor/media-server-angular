@@ -21,6 +21,10 @@ export class MediaService {
       );
   }
 
+  getMediaByTag(tag: string): Observable<Media[]> {
+    return this.http.get<Media[]>(`/api/media/tag/${tag}`);
+  }
+
 
 
   private handleError<T> (operation = 'operation', result?: T) {
